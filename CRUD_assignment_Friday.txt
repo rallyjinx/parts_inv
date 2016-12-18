@@ -1,0 +1,24 @@
+API - CRUD - (user & at least 3 other tables) - markdown file due 10am FRIDAY
+
+/route GET (send) (status) (returns) <- write these
+
+then TESTS
+
+then ROUTES
+
+then FRONT END
+
+car/parts/location
+
+/cars GET N/A 200 [{id, owner: "name", year: XXXX, make: "make", model: "model", VIN: "VIN"}]
+/cars GET/id N/A 200 {...}
+/cars POST {...} 200 {...}
+/cars PATCH/id {...} 200 {...}
+/cars DELETE/id N/A 200 {...}
+
+/parts GET N/A 200 [{id, car_id, part_num: "NUM", description: "description", location: XXX}]
+/parts GET/id
+/parts POST
+/parts PATCH
+/parts DELETE
+
