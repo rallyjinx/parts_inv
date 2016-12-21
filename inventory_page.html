@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inventory</title>
+    <link rel="icon" type="image/png" href="images/1481948165_minicar_64.png" sizes="16x16">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="head-text">Restoration Parts Inventory</h1>
+    </header>
+    <h2>Enter a new car</h2>
+    <form class="enter-car" action="localhost:8000/cars" method="post">
+      <label for="name">Owner's Name:</label>
+      <input type="text" id="name"></input>
+      <label for="year">Year:</label>
+      <input type="text" id="year"></input>
+      <label for="make">Make:</label>
+      <input type="text" id="make"></input>
+      <label for="model">Model:</label>
+      <input type="text" id="model"></input>
+      <label for="vin">VIN:</label>
+      <input type="text" id="vin"></input>
+    </form>
+    <h2>Enter a new part</h2>
+    <form class="enter-parts">
+      <label for="car-id">Car ID:</label>
+      <input type="number" min="1" id="car-id"></input>
+      <label for="part-num">Part Number:</label>
+      <input type="text" id="part-num"></input>
+      <label for="desc">Description:</label>
+      <input type="text" id="desc"></input>
+      <label for="location">Location:</label>
+      <input type="text" id="location"></input>
+    </form>
+    <h2>Look up a car</h2>
+    <form class="lookup-car" action="localhost:8000/cars" method="get">
+      <label for="lookup-by-id">Select car id</label>
+      <input type="number" min="1" id="lookup-by-id"></input>
+      <button type="submit">Get car info</button>
+    </form>
+    <h2>Look up a part</h2>
+    <form class="lookup-parts"></form>
+    <h2>Display all parts</h2>
+    <form class="show-all-parts"></form>
+  </body>
+</html>

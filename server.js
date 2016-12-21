@@ -43,9 +43,11 @@ app.use((req, res, next) => {
 
 const cars = require('./routes/cars');
 const parts = require('./routes/parts');
+const users = require('./routes/users');
 
 app.use(cars);
 app.use(parts);
+app.use(users);
 
 app.use((_req, res) => {
   res.sendStatus(404);

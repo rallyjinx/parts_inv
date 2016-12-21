@@ -1,0 +1,18 @@
+.header {
+  background-color: black;
+  color: white;
+}
+
+.head-text {
+  text-align: center;
+}
+
+.register {
+  text-align: right;
+}
+.login {
+text-align: center;
+}
+.signup {
+  text-align: center;
+}
